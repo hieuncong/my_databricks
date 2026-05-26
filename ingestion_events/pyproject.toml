@@ -22,6 +22,8 @@ dev = [
 
 [project.scripts]
 main = "ingestion_events.main:main"
+handler = "event_orchestration.handler:main"
+check_dependiencies = "event_orchestration.check_dependencies:main"
 
 [build-system]
 requires = ["hatchling"]

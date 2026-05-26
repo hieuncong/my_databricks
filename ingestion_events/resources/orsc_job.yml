@@ -28,7 +28,7 @@ resources:
       tasks:
         - task_key: handle_event
           python_wheel_task:
-            package_name: event_orchestration
+            package_name: ingestion_events
             entry_point: handler
             parameters:
               - "--catalog"
@@ -36,10 +36,10 @@ resources:
               - "--schema"
               - "${var.schema}"
           environment_key: default
-        - task_key: check_dependiencies
+        - task_key: check_dependencies
           python_wheel_task:
-            package_name: event_orchestration
-            entry_point: check_dependiencies
+            package_name: ingestion_events
+            entry_point: check_dependencies
             parameters:
               - "--catalog"
               - "${var.catalog}"

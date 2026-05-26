@@ -28,7 +28,7 @@ targets:
     mode: development
     default: true
     workspace:
-      host: https://dbc-de078d0d-b410.cloud.databricks.com
+      host: https://dbc-74d2049d-808b.cloud.databricks.com
     variables:
       catalog: workspace
       schema: default
