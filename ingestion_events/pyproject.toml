@@ -23,7 +23,7 @@ dev = [
 [project.scripts]
 main = "ingestion_events.main:main"
 handler = "event_orchestration.handler:main"
-check_dependiencies = "event_orchestration.check_dependencies:main"
+check_dependencies = "event_orchestration.check_dependencies:main"
 
 [build-system]
 requires = ["hatchling"]
@@ -31,3 +31,6 @@ build-backend = "hatchling.build"
 
 [tool.ruff]
 line-length = 120
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/ingestion_events", "src/event_orchestration"]
