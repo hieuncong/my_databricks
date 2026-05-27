@@ -38,7 +38,7 @@ def main():
         schema_struct
     )
 
-    dff.write.format("delta").mode("append").saveAsTable(f"{catalog}.{schema}.ingestion_events")
+    dff.write.format("delta").mode("append").saveAsTable(f"{catalog}.{schema}.check_dependencies")
 
     return
 
